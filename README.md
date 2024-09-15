@@ -1,4 +1,4 @@
-# Hi, I'm Abhishek Kumar! 👋 (https://github.com/Abhirkt1996/Abhishek-BookMyShow/)
+# Hi, I'm Abhishek Kumar! 👋 (https://github.com/Abhirkt1996/BookMyShow/)
 
 # Book my show..
 
@@ -10,7 +10,7 @@ The movie booked by the user will be stored in database and is retrived and show
 If you want to work on this project , clone this repo
 
 ```bash
-git clone "https://github.com/Abhirkt1996/Abhishek-BookMyShow.git"
+git clone "https://github.com/Abhirkt1996/BookMyShow.git"
 ```
 Open this project on your local IDE and in the terminal do this commands one by one
 
