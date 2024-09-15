@@ -52,10 +52,89 @@ Returns a list of all bookings stored in the database in JSON format.
 | `seats`    | `string` | **Required**. selected seats |
 Returns the newly created booking in JSON format
 
+--Request Body:
+{
+  "movie": "Movie Name",
+  "timeSlot": "Time Slot",
+  "seats": Number of seats
+}
+
+
+Memory updated
+Your README.md looks great! It provides a clear overview of the project, installation steps, API usage, and environment variables. Here are a few suggestions to refine it further:
+
+Introduction:
+
+Change "where the user can book a movie with specified seats at a specified slot and get a confirmation that, wheteher booking was sucessful or not" to "where users can book movie tickets with specified seats and time slots, and receive a confirmation of their booking."
+Installation:
+
+In the backend setup, clarify that you should create a .env file for environment variables. It helps users understand the need for the .env file.
+API Endpoints:
+
+For the GET and POST routes, it’s helpful to include example requests and responses to provide more context.
+Environment Variables:
+
+Add clear instructions on how to obtain and set the API_KEY for MongoDB.
+Tech Stack:
+
+Add a section for backend technologies like Express and Mongoose.
+Clarify Live and Local Setup:
+
+Make it clear which variables are for live and local setups.
+Here's a refined version of the README.md:
+
+Hi, I'm Abhishek Kumar! 👋 GitHub Profile
+BookMyShow
+This is a demo of the real BookMyShow application, where users can book movie tickets with specified seats and time slots, and receive a confirmation of their booking. The booked movie details are stored in a database and can be retrieved and displayed to the user.
+
+Installation
+If you want to work on this project, clone this repo:
+
+bash
+Copy code
+git clone "https://github.com/Abhirkt1996/Abhishek-BookMyShow.git"
+Open this project in your local IDE and run the following commands:
+
+For Frontend
+bash
+Copy code
+cd BookMyShow-main
+npm install
+npm start
 For Backend
-```https
-https://bookms.onrender.com/api/booking
-```
+bash
+Copy code
+cd BookMyShow-main
+cd BookMyShow-Backend
+npm install
+npm start
+Make sure to create a .env file in the BookMyShow-Backend directory with the required environment variables.
+
+The frontend will be available at http://localhost:3000 and the backend will be running on http://localhost:8081.
+
+Booking
+Get Booking
+http
+Copy code
+GET /api/bookings
+Post Booking
+http
+Copy code
+POST /api/bookings
+Request Body:
+
+json
+Copy code
+{
+  "movie": "Movie Name",
+  "timeSlot": "Time Slot",
+  "seats": Number of seats
+}
+
+--Response:
+
+For successful booking: Details of the newly created booking in JSON format
+For errors: Error message
 
 By clicking on above links , you can see the project
 
