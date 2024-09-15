@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Hi, I'm Abhishek Kumar! 👋 (https://github.com/Abhirkt1996/Abhishek-BookMyShow/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book my show..
 
-## Available Scripts
+This is a demo of real bookmyshow, where the user can book a movie with specified seats at a specified slot and get a confirmation that, wheteher booking was sucessful or not.
 
-In the project directory, you can run:
+The movie booked by the user will be stored in database and is retrived and shown to the user.
 
-### `npm start`
+## Installation
+If you want to work on this project , clone this repo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone "https://github.com/Abhirkt1996/Abhishek-BookMyShow.git"
+```
+Open this project on your local IDE and in the terminal do this commands one by one
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---For Frontend
 
-### `npm test`
+ ```
+cd BookMyShow-main
+npm install
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ```
 
-### `npm run build`
+For backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ```
+first step- cd book-my-show-main, second step- cd .\BookMyShow-Backend 
+npm run start
+(message show is connect the database mongodb)
+ ```
+In the backend you should connect with database server. This will start you frontend part on port - http://localhost:3000 and backend part running on port- http://localhost:8081
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Booking
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+--get booking
+```http
+  GET /api/bookings
+  ```
+--post booking 
+Returns a list of all bookings stored in the database in JSON format.
 
-### `npm run eject`
+```http
+  POST /api/bookings
+  ```
+  
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `movie`    | `string` | **Required**. selected movie |
+| `timeSlot`    | `string` | **Required**. selected time slot |
+| `seats`    | `string` | **Required**. selected seats |
+Returns the newly created booking in JSON format
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+For Backend
+```https
+https://bookms.onrender.com/api/booking
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+By clicking on above links , you can see the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. select the movie you would like to watch.
+2. select timeslot .
+3. select any seat type and and number of seats would you like to booked.
+4. click on ```Book Now```  button. If you want to change any selected field, then do changes before booking it.
+ After click on Book Now button you got succesfull booking message and your last booking details display on the screen under last booking details heading.
+ 
+## Environment Variables
+To run this project, you will need to add the following environment variables to your .env file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Note : your mongodb clustur connect key API_KEY
 
-## Learn More
+## For Backend
+MongoDb live connection string
+`MONGODBURI: mongodb+srv://<user_name>:<password>@mongodb_connection_string/database_name `
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MongoDb local connection string (if you set application on localhost)
+`MONGODBURI = mongodb://localhost:27017/<database_name> `
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+COLLECTION_NAME = <collection_name>
 
-### Code Splitting
+if application is running on localhost set node_env development or if it is on live set production NODE_ENV =  development (development || production)
+APP_PORT = 8081
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+api routes path
+GET_REQUEST = /api/booking POST_REQUEST = /api/booking
 
-### Analyzing the Bundle Size
+## For Frontend
+`REACT_APP_API_LOCAL_PATH = http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Tech Stack
+Client: React js, Bootstrap
 
-### Making a Progressive Web App
+Server: Node, Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies that are used.
 
-### Advanced Configuration
+- #### React  
+    This app is fully built on top of react library.
+- #### Axios / Fetch
+    Used for making api calls.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##
+<h4 align="center">Made with ❤️ from Abhishek </h4>
+<h4 align="center">Thank You</h4>
