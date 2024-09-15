@@ -137,11 +137,11 @@ For successful booking: Details of the newly created booking in JSON format
 For errors: Error message
 
 By clicking on above links , you can see the project
-
-1. select the movie you would like to watch.
-2. select timeslot .
-3. select any seat type and and number of seats would you like to booked.
-4. click on ```Book Now```  button. If you want to change any selected field, then do changes before booking it.
+1.book-my-show-jade.vercel.app
+2. select the movie you would like to watch.
+3. select timeslot .
+4. select any seat type and and number of seats would you like to booked.
+5. click on ```Book Now```  button. If you want to change any selected field, then do changes before booking it.
  After click on Book Now button you got succesfull booking message and your last booking details display on the screen under last booking details heading.
  
 ## Environment Variables
