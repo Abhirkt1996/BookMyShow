@@ -1,4 +1,4 @@
-# Hi, I'm Abhishek Kumar! 👋 (https://github.com/Abhirkt1996/Abhishek-BookMyShow/)
+# Hi, I'm Abhishek Kumar! 👋 (https://github.com/Abhirkt1996/BookMyShow/)
 
 # Book my show..
 
@@ -10,14 +10,14 @@ The movie booked by the user will be stored in database and is retrived and show
 If you want to work on this project , clone this repo
 
 ```bash
-git clone "https://github.com/Abhirkt1996/Abhishek-BookMyShow.git"
+git clone "https://github.com/Abhirkt1996/BookMyShow.git"
 ```
 Open this project on your local IDE and in the terminal do this commands one by one
 
 ---For Frontend
 
  ```
-cd BookMyShow-main
+cd bookmyshow-main
 npm install
 npm start
 
@@ -31,6 +31,12 @@ npm run start
 (message show is connect the database mongodb)
  ```
 In the backend you should connect with database server. This will start you frontend part on port - http://localhost:3000 and backend part running on port- http://localhost:8081
+
+## API Reference
+Base URL
+https://book-my-show-jade.vercel.app
+
+cheak it this link https://book-my-show-jade.vercel.app/api/booking
 
 ## Booking
 
@@ -52,17 +58,35 @@ Returns a list of all bookings stored in the database in JSON format.
 | `seats`    | `string` | **Required**. selected seats |
 Returns the newly created booking in JSON format
 
+--Request Body:
+{
+  "movie": "Movie Name",
+  "timeSlot": "Time Slot",
+  "seats": Number of seats
+}
+
+Here is the deployed project
+
+For Frontend
+```https
+https://book-my-show-jade.vercel.app/
+```
+
 For Backend
 ```https
-https://bookms.onrender.com/api/booking
+https://book-my-show-jade.vercel.app/api/booking
 ```
 
 By clicking on above links , you can see the project
+-- ## How to Use
+1. click on below link
+   ```https 
+[bookmyshowApp](https://book-my-show-jade.vercel.app/)
 
-1. select the movie you would like to watch.
-2. select timeslot .
-3. select any seat type and and number of seats would you like to booked.
-4. click on ```Book Now```  button. If you want to change any selected field, then do changes before booking it.
+2. select the movie you would like to watch.
+3. select timeslot .
+4. select any seat type and and number of seats would you like to booked.
+5. click on ```Book Now```  button. If you want to change any selected field, then do changes before booking it.
  After click on Book Now button you got succesfull booking message and your last booking details display on the screen under last booking details heading.
  
 ## Environment Variables
@@ -87,11 +111,16 @@ GET_REQUEST = /api/booking POST_REQUEST = /api/booking
 
 ## For Frontend
 `REACT_APP_API_LOCAL_PATH = http://localhost:3000`
+`REACT_APP_API_LIVE_PATH = https://book-my-show-jade.vercel.app`
 
 ### Tech Stack
 Client: React js, Bootstrap
 
 Server: Node, Express
+
+database: MongoDB
+
+Link to website -> [BookMyShow](https://book-my-show-jade.vercel.app/) 
 
 ## Technologies that are used.
 
