@@ -33,10 +33,8 @@ npm run start
 In the backend you should connect with database server. This will start you frontend part on port - http://localhost:3000 and backend part running on port- http://localhost:8081
 
 ## API Reference
-Base URL
-https://book-my-show-jade.vercel.app
-
-cheak it this link https://book-my-show-jade.vercel.app/api/booking
+Base URL  https://bookms.onrender.com
+cheak it this link https://bookms.onrender.com/api/booking
 
 ## Booking
 
@@ -69,19 +67,19 @@ Here is the deployed project
 
 For Frontend
 ```https
-https://book-my-show-jade.vercel.app/
+https://fanciful-scone-b9fe1b.netlify.app/
 ```
 
 For Backend
 ```https
-https://book-my-show-jade.vercel.app/api/booking
+https://bookms.onrender.com/api/booking
 ```
 
 By clicking on above links , you can see the project
 -- ## How to Use
 1. click on below link
    ```https 
-[bookmyshowApp](https://book-my-show-jade.vercel.app/)
+[bookmyshowApp](https://fanciful-scone-b9fe1b.netlify.app/)
 
 2. select the movie you would like to watch.
 3. select timeslot .
@@ -111,7 +109,7 @@ GET_REQUEST = /api/booking POST_REQUEST = /api/booking
 
 ## For Frontend
 `REACT_APP_API_LOCAL_PATH = http://localhost:3000`
-`REACT_APP_API_LIVE_PATH = https://book-my-show-jade.vercel.app`
+`REACT_APP_API_LIVE_PATH = https://fanciful-scone-b9fe1b.netlify.app
 
 ### Tech Stack
 Client: React js, Bootstrap
@@ -120,7 +118,7 @@ Server: Node, Express
 
 database: MongoDB
 
-Link to website -> [BookMyShow](https://book-my-show-jade.vercel.app/) 
+Link to website -> [https://fanciful-scone-b9fe1b.netlify.app/) 
 
 ## Technologies that are used.
 
