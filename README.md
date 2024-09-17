@@ -80,7 +80,7 @@ By clicking on above links , you can see the project
 1. click on below link
    ```https 
 [bookmyshowApp](https://fanciful-scone-b9fe1b.netlify.app/)
-
+```
 2. select the movie you would like to watch.
 3. select timeslot .
 4. select any seat type and and number of seats would you like to booked.
@@ -109,7 +109,7 @@ GET_REQUEST = /api/booking POST_REQUEST = /api/booking
 
 ## For Frontend
 `REACT_APP_API_LOCAL_PATH = http://localhost:3000`
-`REACT_APP_API_LIVE_PATH = https://fanciful-scone-b9fe1b.netlify.app
+`REACT_APP_API_LIVE_PATH = https://bookms.onrender.com
 
 ### Tech Stack
 Client: React js, Bootstrap
